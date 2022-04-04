@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Flex } from "rebass/styled-components";
+import Text from "../Text";
 import BurgerMenu from "./BurgerMenu";
 import Menu from "./Menu";
 
@@ -14,7 +15,7 @@ const Nav = () => {
     <Flex
       px={[4, null, 8]}
       py={3}
-      alignItems="center"
+      alignItems={["center", "center", "flex-start"]}
       height={["auto", null, "100vh"]}
       width={[1, null, 350]}
       flexDirection={["row", null, "column"]}
@@ -27,7 +28,7 @@ const Nav = () => {
         gap: "24px",
       }}
     >
-      My works
+      <Text variant="subheading">My works</Text>
       <BurgerMenu
         onBurgerClick={toggleBurger}
         isOpen={isOpen}

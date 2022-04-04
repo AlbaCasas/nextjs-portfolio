@@ -15,7 +15,7 @@ const BurgerMenu = ({ isOpen, onBurgerClick, ...props }) => {
           position: "fixed",
           zIndex: -1,
           right: 0,
-          top: !isOpen ? "-108px" : "64px",
+          top: !isOpen ? "-120px" : "64px",
           transition: "top 1s ease",
         }}
       >
