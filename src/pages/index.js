@@ -1,7 +1,11 @@
 import Nav from "../components/Nav";
 
 const index = () => {
-  return <Nav />;
+  return (
+    <>
+      <Nav />
+    </>
+  );
 };
 
 export default index;

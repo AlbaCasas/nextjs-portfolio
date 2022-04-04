@@ -12,21 +12,28 @@ const Nav = () => {
 
   return (
     <Flex
-      px={[4, 4, 8]}
+      px={[4, null, 8]}
       py={3}
       alignItems="center"
-      height={["auto", "auto", "100vh"]}
-      width={[1, 1, 350]}
-      flexDirection={["row", "row", "column"]}
+      height={["auto", null, "100vh"]}
+      width={[1, null, 350]}
+      flexDirection={["row", null, "column"]}
+      justifyContent={["space-between", null, "center"]}
       bg="secondary"
+      sx={{
+        zIndex: 10,
+        borderBottom: "1px solid",
+        borderBottomColor: "neutral",
+        gap: "24px",
+      }}
     >
-      Alba Casas
+      My works
       <BurgerMenu
-        onClick={toggleBurger}
+        onBurgerClick={toggleBurger}
         isOpen={isOpen}
-        display={["block", "block", "none"]}
+        display={["block", null, "none"]}
       />
-      <Menu display={["none", "none", "block"]} />
+      <Menu display={["none", null, "block"]} />
     </Flex>
   );
 };
