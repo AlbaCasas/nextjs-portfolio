@@ -1,10 +1,7 @@
-import { Text, Box } from "rebass/styled-components";
+import Nav from "../components/Nav";
+
 const index = () => {
-  return (
-    <Box px={[5, 3, 2]} py={[5, 2, 2]} bg="blue">
-      <Text variant="regular">index</Text>
-    </Box>
-  );
+  return <Nav />;
 };
 
 export default index;
