@@ -1,9 +1,13 @@
-import Nav from "../components/Nav";
+import Layout from "../components/Layout";
+
+import Home from "./Home";
 
 const index = () => {
   return (
     <>
-      <Nav />
+      <Layout>
+        <Home />
+      </Layout>
     </>
   );
 };

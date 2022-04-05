@@ -22,11 +22,12 @@ const Nav = () => {
       justifyContent={["space-between", null, "center"]}
       bg="secondary"
       sx={{
-        zIndex: 10,
         borderBottom: "1px solid",
         borderBottomColor: "neutral",
         gap: "24px",
       }}
+      marginBottom={[200, 200, 0]}
+      marginRight={[0, 0, "15%"]}
     >
       <Text variant="subheading">My works</Text>
       <BurgerMenu

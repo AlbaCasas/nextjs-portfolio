@@ -6,7 +6,7 @@ import Text from "../../Text";
 const Menu = ({ ...props }) => {
   return (
     <Box {...props}>
-      <Flex sx={{ gap: "24px", flexDirection: "column" }}>
+      <Flex sx={{ gap: "16px", flexDirection: "column" }}>
         <Box>
           <Text>Home</Text>
         </Box>
