@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 
-import Home from "./Home";
+import Home from "../views/Home";
 
 const index = () => {
   return (

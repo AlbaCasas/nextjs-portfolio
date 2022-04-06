@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { keyframes } from "styled-components";
-import Image from "next/image";
+import Image from "../../../components/Image";
 
 const morph = keyframes`
 0% {
@@ -14,8 +14,7 @@ const morph = keyframes`
 }
 `;
 
-export const StyledImage = styled(Image)`
-  position: absolute;
+export default styled(Image)`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

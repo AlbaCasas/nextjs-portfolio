@@ -1,11 +1,11 @@
 import React from "react";
 import { Box } from "rebass/styled-components";
-import { StyledImage } from "./styled";
+import NextImage from "next/image";
 
-const Image = ({ src, alt, ...props }) => {
+const Image = ({ src, alt, className, ...props }) => {
   return (
     <Box {...props}>
-      <StyledImage src={src} alt={alt} />
+      <NextImage src={src} alt={alt} className={className} />
     </Box>
   );
 };

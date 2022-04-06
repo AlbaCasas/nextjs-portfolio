@@ -2,8 +2,10 @@ import React from "react";
 import img from "../../../public/photo.png";
 import { Flex } from "rebass/styled-components";
 import Text from "../../components/Text";
-import Avatar from "../../components/Image";
-
+import Avatar from "./Avatar";
+import { Box } from "rebass/styled-components";
+import { RiLinkedinBoxFill, RiGithubFill } from "react-icons/ri";
+import Icon from "../../components/Icon";
 const Home = () => {
   return (
     <Flex
@@ -12,11 +14,13 @@ const Home = () => {
       justifyContent="center"
       alignItems="center"
       margin={[24, 24, 0]}
+      marginRight={[null, null, 40]}
     >
       <Avatar
         src={img}
         alt="avatar"
-        width={[200, 200, 300]}
+        minWidth={[200, 200, 300]}
+        maxWidth={[200, 200, 300]}
         height={[200, 200, 300]}
       />
       <Flex
@@ -32,6 +36,10 @@ const Home = () => {
           Full-stack developer with a passion for learning best practices and
           creating the best applications.
         </Text>
+        <Box fontSize="32px">
+          <Icon icon={RiLinkedinBoxFill} mr={3} />
+          <Icon icon={RiGithubFill} />
+        </Box>
       </Flex>
     </Flex>
   );
