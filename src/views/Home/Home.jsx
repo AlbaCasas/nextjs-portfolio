@@ -7,15 +7,15 @@ import { Box } from "rebass/styled-components";
 import { RiLinkedinBoxFill, RiGithubFill } from "react-icons/ri";
 import Icon from "../../components/Icon";
 import Link from "../../components/Link";
+
 const Home = () => {
   return (
     <Flex
       sx={{ gap: 24 }}
-      flexDirection={["column", "column", "row"]}
+      flexDirection={["column", null, "row"]}
       justifyContent="center"
       alignItems="center"
-      margin={[24, 24, 0]}
-      marginRight={[null, null, 40]}
+      height={["calc(100vh - 192px)", null, "auto"]}
     >
       <Avatar
         src={img}

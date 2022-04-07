@@ -7,6 +7,7 @@ const Burger = ({ isOpen, onClick }) => {
       <BurgerLine />
       <BurgerLine />
       <BurgerLine />
+      <BurgerLine />
     </StyledBurger>
   );
 };

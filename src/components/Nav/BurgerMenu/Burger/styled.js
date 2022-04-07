@@ -1,13 +1,39 @@
 import styled from "styled-components";
+import { css } from "styled-components";
 
 export const BurgerLine = styled.div`
   width: 32px;
   height: 4px;
   background: ${({ theme }) => theme.colors.primary};
   border-radius: 10px;
-  transition: all 0.3s linear;
-  position: relative;
-  transform-origin: 1px;
+  transition: 0.2s linear;
+  position: absolute;
+  left: 0;
+  top: 0;
+`;
+
+const openLinesCss = css`
+  & ${BurgerLine} {
+    &:first-child {
+      top: 9px;
+      width: 0%;
+      left: 50%;
+    }
+
+    &:nth-child(2) {
+      transform: rotate(45deg);
+    }
+
+    &:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+
+    &:nth-child(4) {
+      top: 9px;
+      width: 0%;
+      left: 50%;
+    }
+  }
 `;
 
 export const StyledBurger = styled.div`
@@ -16,7 +42,7 @@ export const StyledBurger = styled.div`
   flex-direction: column;
   justify-content: space-around;
   width: 32px;
-  height: 32px;
+  height: 24px;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -29,16 +55,20 @@ export const StyledBurger = styled.div`
 
   & ${BurgerLine} {
     &:first-child {
-      transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
+      top: 0px;
     }
 
     &:nth-child(2) {
-      opacity: ${({ open }) => (open ? "0" : "1")};
-      transform: ${({ open }) => (open ? "translateX(20px)" : "translateX(0)")};
+      top: 9px;
     }
 
     &:nth-child(3) {
-      transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
+      top: 9px;
+    }
+    &:nth-child(4) {
+      top: 18px;
     }
   }
+
+  ${({ isOpen }) => isOpen && openLinesCss};
 `;

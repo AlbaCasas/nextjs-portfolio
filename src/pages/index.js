@@ -4,11 +4,9 @@ import Home from "../views/Home";
 
 const index = () => {
   return (
-    <>
-      <Layout>
-        <Home />
-      </Layout>
-    </>
+    <Layout>
+      <Home />
+    </Layout>
   );
 };
 

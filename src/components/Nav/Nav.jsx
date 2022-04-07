@@ -13,9 +13,9 @@ const Nav = () => {
 
   return (
     <Flex
-      px={[4, null, 8]}
+      px={[4, 4, 8]}
       py={3}
-      alignItems={["center", "center", "flex-start"]}
+      alignItems={["center", null, "flex-start"]}
       height={["auto", null, "100vh"]}
       width={[1, null, 350]}
       flexDirection={["row", null, "column"]}
@@ -25,9 +25,8 @@ const Nav = () => {
         borderBottom: "1px solid",
         borderBottomColor: "neutral",
         gap: "24px",
+        zIndex: 10,
       }}
-      marginBottom={[200, 200, 0]}
-      marginRight={[0, 0, "15%"]}
     >
       <Text variant="subheading">My works</Text>
       <BurgerMenu

@@ -12,11 +12,12 @@ const BurgerMenu = ({ isOpen, onBurgerClick, ...props }) => {
         px={4}
         py={5}
         sx={{
-          position: "fixed",
+          position: "absolute",
+
           zIndex: -1,
           right: 0,
           top: !isOpen ? "-120px" : "64px",
-          transition: "top 1s ease",
+          transition: "0.5s ease-out",
         }}
       >
         <Menu />
