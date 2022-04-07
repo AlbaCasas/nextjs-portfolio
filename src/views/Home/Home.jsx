@@ -15,7 +15,7 @@ const Home = () => {
       flexDirection={["column", null, "row"]}
       justifyContent="center"
       alignItems="center"
-      height={["calc(100vh - 192px)", null, "auto"]}
+      minHeight={["calc(100vh - 192px)", null, "auto"]}
     >
       <Avatar
         src={img}
