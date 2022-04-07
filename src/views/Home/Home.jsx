@@ -6,6 +6,7 @@ import Avatar from "./Avatar";
 import { Box } from "rebass/styled-components";
 import { RiLinkedinBoxFill, RiGithubFill } from "react-icons/ri";
 import Icon from "../../components/Icon";
+import Link from "../../components/Link";
 const Home = () => {
   return (
     <Flex
@@ -37,8 +38,12 @@ const Home = () => {
           creating the best applications.
         </Text>
         <Box fontSize="32px">
-          <Icon icon={RiLinkedinBoxFill} mr={3} />
-          <Icon icon={RiGithubFill} />
+          <Link mr={3} href="https://www.linkedin.com/in/alba-casas/">
+            <Icon icon={RiLinkedinBoxFill} />
+          </Link>
+          <Link href="https://github.com/AlbaCasas">
+            <Icon icon={RiGithubFill} />
+          </Link>
         </Box>
       </Flex>
     </Flex>
