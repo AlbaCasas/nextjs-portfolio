@@ -1,14 +1,17 @@
 import React from "react";
+import { Box } from "rebass/styled-components";
 import { BurgerLine, StyledBurger } from "./styled";
 
-const Burger = ({ isOpen, onClick }) => {
+const Burger = ({ isOpen, onClick, ...props }) => {
   return (
-    <StyledBurger isOpen={isOpen} onClick={onClick}>
-      <BurgerLine />
-      <BurgerLine />
-      <BurgerLine />
-      <BurgerLine />
-    </StyledBurger>
+    <Box {...props}>
+      <StyledBurger isOpen={isOpen} onClick={onClick}>
+        <BurgerLine />
+        <BurgerLine />
+        <BurgerLine />
+        <BurgerLine />
+      </StyledBurger>
+    </Box>
   );
 };
 
