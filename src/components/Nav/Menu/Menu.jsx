@@ -1,19 +1,34 @@
-import React from "react";
+import { useState } from "react";
 import { Flex } from "rebass";
 import { Box } from "rebass/styled-components";
 import Text from "../../Text";
 
-const Menu = ({ ...props }) => {
+const Menu = ({ setView, ...props }) => {
   return (
     <Box {...props}>
       <Flex sx={{ gap: "16px", flexDirection: "column" }}>
-        <Box>
+        <Box
+          onClick={() => {
+            setView("home");
+          }}
+          sx={{ cursor: "pointer" }}
+        >
           <Text>Home</Text>
         </Box>
-        <Box>
+        <Box
+          onClick={() => {
+            setView("about");
+          }}
+          sx={{ cursor: "pointer" }}
+        >
           <Text>About</Text>
         </Box>
-        <Box>
+        <Box
+          onClick={() => {
+            setView("portfolio");
+          }}
+          sx={{ cursor: "pointer" }}
+        >
           <Text>Portfolio</Text>
         </Box>
       </Flex>
