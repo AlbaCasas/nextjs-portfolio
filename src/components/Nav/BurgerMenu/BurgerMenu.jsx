@@ -1,7 +1,7 @@
 import { Box } from "rebass/styled-components";
 import Menu from "../Menu";
 
-const BurgerMenu = ({ isOpen, onBurgerClick, ...props }) => {
+const BurgerMenu = ({ setView, isOpen, onBurgerClick, ...props }) => {
   return (
     <Box {...props}>
       <Box
@@ -11,13 +11,13 @@ const BurgerMenu = ({ isOpen, onBurgerClick, ...props }) => {
         py={5}
         sx={{
           position: "absolute",
-          zIndex: -1,
+          zIndex: 1,
           right: 0,
           top: !isOpen ? "-110px" : "56px",
           transition: "0.5s ease-out",
         }}
       >
-        <Menu />
+        <Menu setView={setView} />
       </Box>
     </Box>
   );

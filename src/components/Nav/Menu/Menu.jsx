@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Flex } from "rebass";
 import { Box } from "rebass/styled-components";
 import Text from "../../Text";

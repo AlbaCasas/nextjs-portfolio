@@ -40,6 +40,7 @@ const Nav = ({ setView }) => {
         />
       </Flex>
       <BurgerMenu
+        setView={setView}
         onBurgerClick={toggleBurger}
         isOpen={isOpen}
         display={["block", null, "none"]}
