@@ -1,22 +1,26 @@
 import React from "react";
-import { Flex } from "rebass/styled-components";
+import { Flex, Box } from "rebass/styled-components";
 import Nav from "../Nav";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, isFullScreen }) => {
   return (
-    <Flex
-      alignItems={["center", null, null]}
-      flexDirection={["column", "column", "row"]}
-    >
+    <Flex flexDirection={["column", "column", "row"]} height="100vh">
       <Nav />
       <Flex
         flexDirection="column"
-        justifyContent={["flex-start", null, "center"]}
-        px={[3, 3, 8]}
+        px={[4, null, 8]}
+        alignItems="center"
         py={8}
         width={1}
+        height={isFullScreen ? "100%" : "fit-content"}
       >
-        {children}
+        <Box
+          py={7}
+          maxWidth={880}
+          height={isFullScreen ? "100%" : "fit-content"}
+        >
+          {children}
+        </Box>
       </Flex>
     </Flex>
   );

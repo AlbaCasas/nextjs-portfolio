@@ -1,12 +1,12 @@
 import Layout from "../components/Layout";
 import Home from "../views/Home";
 
-const Index = () => {
+const HomePage = () => {
   return (
-    <Layout>
+    <Layout isFullScreen>
       <Home />
     </Layout>
   );
 };
 
-export default Index;
+export default HomePage;

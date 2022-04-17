@@ -1,13 +1,8 @@
 import React from "react";
-import { Box } from "rebass/styled-components";
-import NextImage from "next/image";
+import { Image as RebassImage } from "rebass/styled-components";
 
-const Image = ({ src, alt, className, ...props }) => {
-  return (
-    <Box {...props}>
-      <NextImage src={src} alt={alt} className={className} />
-    </Box>
-  );
+const Image = ({ src, alt, ...props }) => {
+  return <RebassImage {...props} src={src} alt={alt} />;
 };
 
 export default Image;

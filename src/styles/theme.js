@@ -42,16 +42,24 @@ const theme = {
       letterSpacing: "2px",
       fontFamily: "heading",
     },
+    title: {
+      fontWeight: 700,
+      fontSize: ["18px", "20px", "22px"],
+      fontFamily: "heading",
+      lineHeight: 1.4,
+    },
     body: {
       fontSize: "16px",
+      color: "text",
     },
     italic: {
       variant: "text.body",
       fontStyle: "italic",
       lineHeight: 2,
     },
-    link: {
-      textDecoration: "none",
+    "italic-bold": {
+      variant: "text.italic",
+      fontWeight: 700,
       color: "primary",
     },
   },

@@ -1,5 +1,4 @@
 import React from "react";
-import img from "../../../public/photo.png";
 import { Flex } from "rebass/styled-components";
 import Text from "../../components/Text";
 import Avatar from "./Avatar";
@@ -7,7 +6,6 @@ import { Box } from "rebass/styled-components";
 import { RiLinkedinBoxFill, RiGithubFill } from "react-icons/ri";
 import Icon from "../../components/Icon";
 import Link from "../../components/Link";
-import { Card } from "rebass/styled-components";
 
 const Home = () => {
   return (
@@ -16,10 +14,10 @@ const Home = () => {
       flexDirection={["column", null, "row"]}
       justifyContent="center"
       alignItems="center"
-      minHeight={["calc(100vh - 192px)", null, "auto"]}
+      height="100%"
     >
       <Avatar
-        src={img}
+        src="/static/photo.png"
         alt="avatar"
         minWidth={[200, null, 300]}
         maxWidth={[200, null, 300]}

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Flex } from "rebass/styled-components";
+import { Flex, Box } from "rebass/styled-components";
 import Text from "../Text";
 import BurgerMenu from "./BurgerMenu";
 import Menu from "./Menu";
@@ -14,8 +14,9 @@ const Nav = () => {
 
   return (
     <>
+      <Box minWidth={[0, 0, 350]} />
       <Flex
-        px={[4, 4, 8]}
+        px={[5, null, 8]}
         py={3}
         alignItems={["center", null, "flex-start"]}
         height={["auto", null, "100vh"]}
@@ -24,17 +25,18 @@ const Nav = () => {
         justifyContent={["space-between", null, "center"]}
         bg="secondary"
         sx={{
+          borderRight: "1px solid",
           borderBottom: "1px solid",
-          borderBottomColor: "neutral",
-          gap: 4,
+          borderColor: "neutral",
+          gap: 5,
           zIndex: 10,
-          position: "relative",
+          position: "fixed",
         }}
       >
         <Text variant="subheading">Works</Text>
         <Menu display={["none", null, "block"]} />
         <Burger
-          display={["block", "block", "none"]}
+          display={["block", null, "none"]}
           isOpen={isOpen}
           onClick={toggleBurger}
         />

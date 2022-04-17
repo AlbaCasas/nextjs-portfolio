@@ -5,5 +5,4 @@ export const StyledText = styled(Text)`
   display: inline-block;
   text-decoration: none;
   margin: 0;
-  width: fit-content;
 `;
