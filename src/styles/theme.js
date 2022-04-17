@@ -50,6 +50,10 @@ const theme = {
       fontStyle: "italic",
       lineHeight: 2,
     },
+    link: {
+      textDecoration: "none",
+      color: "primary",
+    },
   },
 };
 

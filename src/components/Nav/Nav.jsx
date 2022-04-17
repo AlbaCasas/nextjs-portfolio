@@ -5,7 +5,7 @@ import BurgerMenu from "./BurgerMenu";
 import Menu from "./Menu";
 import Burger from "./BurgerMenu/Burger";
 
-const Nav = ({ setView }) => {
+const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleBurger = () => {
@@ -32,7 +32,7 @@ const Nav = ({ setView }) => {
         }}
       >
         <Text variant="subheading">Works</Text>
-        <Menu setView={setView} display={["none", null, "block"]} />
+        <Menu display={["none", null, "block"]} />
         <Burger
           display={["block", "block", "none"]}
           isOpen={isOpen}
@@ -40,7 +40,6 @@ const Nav = ({ setView }) => {
         />
       </Flex>
       <BurgerMenu
-        setView={setView}
         onBurgerClick={toggleBurger}
         isOpen={isOpen}
         display={["block", null, "none"]}

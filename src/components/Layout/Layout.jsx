@@ -2,13 +2,13 @@ import React from "react";
 import { Flex } from "rebass/styled-components";
 import Nav from "../Nav";
 
-const Layout = ({ children, setView }) => {
+const Layout = ({ children }) => {
   return (
     <Flex
       alignItems={["center", null, null]}
       flexDirection={["column", "column", "row"]}
     >
-      <Nav setView={setView} />
+      <Nav />
       <Flex
         flexDirection="column"
         justifyContent={["flex-start", null, "center"]}

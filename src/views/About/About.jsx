@@ -5,8 +5,8 @@ import img from "../../../public/photo.png";
 
 const About = () => {
   return (
-    <Flex width={1} height={1} mt={["120px", "120px", 0]}>
-      <Image src={img} height="200px" alt="avatar" objectFit="cover"></Image>
+    <Flex width={1} height="auto" mt={["120px", null, 0]}>
+      <Image src={img} height="200px" alt="avatar" objectFit="cover" />
     </Flex>
   );
 };
