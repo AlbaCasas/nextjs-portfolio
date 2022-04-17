@@ -26,12 +26,12 @@ const Nav = ({ setView }) => {
         sx={{
           borderBottom: "1px solid",
           borderBottomColor: "neutral",
-          gap: "24px",
+          gap: 4,
           zIndex: 10,
           position: "relative",
         }}
       >
-        <Text variant="subheading">My works</Text>
+        <Text variant="subheading">Works</Text>
         <Menu setView={setView} display={["none", null, "block"]} />
         <Burger
           display={["block", "block", "none"]}

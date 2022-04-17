@@ -28,6 +28,29 @@ const theme = {
     regular: 400,
     bold: 700,
   },
+  text: {
+    heading: {
+      fontSize: ["30px", "40px", "48px"],
+      fontWeight: 800,
+      fontFamily: "heading",
+      textTransform: "uppercase",
+    },
+    subheading: {
+      fontSize: "24px",
+      textTransform: "uppercase",
+      fontWeight: 800,
+      letterSpacing: "2px",
+      fontFamily: "heading",
+    },
+    body: {
+      fontSize: "16px",
+    },
+    italic: {
+      variant: "text.body",
+      fontStyle: "italic",
+      lineHeight: 2,
+    },
+  },
 };
 
 export default theme;

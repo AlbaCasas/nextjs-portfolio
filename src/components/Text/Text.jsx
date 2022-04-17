@@ -1,9 +1,9 @@
 import React from "react";
 import { StyledText } from "./styled";
 
-const Text = ({ color, variant, children, ...props }) => {
+const Text = ({ children, as = "span", ...props }) => {
   return (
-    <StyledText color={color} variant={variant} {...props}>
+    <StyledText forwardedAs={as} {...props}>
       {children}
     </StyledText>
   );

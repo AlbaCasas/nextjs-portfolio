@@ -7,11 +7,12 @@ import { Box } from "rebass/styled-components";
 import { RiLinkedinBoxFill, RiGithubFill } from "react-icons/ri";
 import Icon from "../../components/Icon";
 import Link from "../../components/Link";
+import { Card } from "rebass/styled-components";
 
 const Home = () => {
   return (
     <Flex
-      sx={{ gap: 24 }}
+      sx={{ gap: [3, null, 8] }}
       flexDirection={["column", null, "row"]}
       justifyContent="center"
       alignItems="center"
@@ -20,29 +21,28 @@ const Home = () => {
       <Avatar
         src={img}
         alt="avatar"
-        minWidth={[200, 200, 300]}
-        maxWidth={[200, 200, 300]}
-        height={[200, 200, 300]}
+        minWidth={[200, null, 300]}
+        maxWidth={[200, null, 300]}
+        height={[200, null, 300]}
       />
       <Flex
-        sx={{ gap: 16 }}
+        sx={{ gap: 3 }}
         flexDirection="column"
-        justifyContent="center"
-        alignItems="center"
-        textAlign="center"
+        alignItems={["center", null, "flex-start"]}
+        textAlign={["center", null, "left"]}
         maxWidth="400px"
       >
-        <Text variant="headingSmall">ALBA CASAS</Text>
+        <Text variant="heading">Alba Casas</Text>
         <Text variant="italic">
           Full-stack developer with a passion for learning best practices and
           creating the best applications.
         </Text>
-        <Box fontSize="32px">
+        <Box>
           <Link mr={3} href="https://www.linkedin.com/in/alba-casas/">
-            <Icon icon={RiLinkedinBoxFill} />
+            <Icon fontSize="32px" icon={RiLinkedinBoxFill} />
           </Link>
           <Link href="https://github.com/AlbaCasas">
-            <Icon icon={RiGithubFill} />
+            <Icon fontSize="32px" icon={RiGithubFill} />
           </Link>
         </Box>
       </Flex>

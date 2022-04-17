@@ -5,7 +5,7 @@ import Text from "../../Text";
 const Menu = ({ setView, ...props }) => {
   return (
     <Box {...props}>
-      <Flex sx={{ gap: "16px", flexDirection: "column" }}>
+      <Flex sx={{ gap: 3, flexDirection: "column" }}>
         <Box
           onClick={() => {
             setView("home");
