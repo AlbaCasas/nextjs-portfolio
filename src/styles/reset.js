@@ -5,6 +5,7 @@ const reset = css`
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
   }
+
   body {
     margin: 0;
   }
@@ -26,6 +27,8 @@ const reset = css`
   }
   a {
     background-color: transparent;
+    color: inherit;
+    text-decoration: none;
   }
   abbr[title] {
     border-bottom: none;

@@ -1,19 +1,23 @@
 import { Box, Flex } from "rebass/styled-components";
 import Link from "../../Link";
+import { useRouter } from "next/router";
+import { route } from "next/dist/server/router";
 
 const Menu = ({ ...props }) => {
+  const router = useRouter();
+
   return (
     <Box {...props}>
       <Flex sx={{ gap: 3, flexDirection: "column" }}>
-        <Box sx={{ cursor: "pointer" }}>
-          <Link href="/">Home</Link>
-        </Box>
-        <Box sx={{ cursor: "pointer" }}>
-          <Link href="/about">About</Link>
-        </Box>
-        <Box sx={{ cursor: "pointer" }}>
-          <Link href="/portfolio">Portfolio</Link>
-        </Box>
+        <Link isActive={router.pathname === "/"} href="/">
+          Home
+        </Link>
+        <Link isActive={router.pathname === "/about"} href="/about">
+          About
+        </Link>
+        <Link isActive={router.pathname === "/portfolio"} href="/portfolio">
+          Portfolio
+        </Link>
       </Flex>
     </Box>
   );

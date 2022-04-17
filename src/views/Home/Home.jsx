@@ -2,7 +2,6 @@ import React from "react";
 import { Flex } from "rebass/styled-components";
 import Text from "../../components/Text";
 import Avatar from "./Avatar";
-import { Box } from "rebass/styled-components";
 import { RiLinkedinBoxFill, RiGithubFill } from "react-icons/ri";
 import Icon from "../../components/Icon";
 import Link from "../../components/Link";
@@ -35,14 +34,14 @@ const Home = () => {
           Full-stack developer with a passion for learning best practices and
           creating the best applications.
         </Text>
-        <Box>
+        <Flex>
           <Link mr={3} href="https://www.linkedin.com/in/alba-casas/">
-            <Icon fontSize="32px" icon={RiLinkedinBoxFill} />
+            <Icon color="primary" fontSize="32px" icon={RiLinkedinBoxFill} />
           </Link>
           <Link href="https://github.com/AlbaCasas">
-            <Icon fontSize="32px" icon={RiGithubFill} />
+            <Icon color="primary" fontSize="32px" icon={RiGithubFill} />
           </Link>
-        </Box>
+        </Flex>
       </Flex>
     </Flex>
   );

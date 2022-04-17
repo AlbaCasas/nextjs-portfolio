@@ -1,16 +1,24 @@
 import React from "react";
 import { Box } from "rebass/styled-components";
+import NextLink from "next/link";
 
-const Link = ({ children, href, ...props }) => {
+const Link = ({ children, href, isActive, ...props }) => {
   return (
     <Box
-      as="a"
-      href={href}
-      color="inherit"
-      sx={{ textDecoration: "none" }}
+      color={isActive ? "primary" : "text"}
+      fontWeight={isActive ? 600 : 400}
+      sx={{
+        textDecoration: "none",
+        transition: "all .3s ease",
+        cursor: "pointer",
+        ":hover": {
+          color: "primary",
+          letterSpacing: !isActive && "2px",
+        },
+      }}
       {...props}
     >
-      {children}
+      <NextLink href={href}>{children}</NextLink>
     </Box>
   );
 };
