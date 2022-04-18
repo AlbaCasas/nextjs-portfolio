@@ -7,4 +7,5 @@ export const StyledTooltip = styled(ReactTooltip)`
   padding: 5px 15px !important;
   font-weight: 600;
   border-radius: 0 !important;
+  z-index: 11 !important;
 `;
