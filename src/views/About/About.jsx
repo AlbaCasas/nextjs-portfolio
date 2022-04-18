@@ -1,7 +1,8 @@
 import React from "react";
 import { Box, Flex, Text } from "rebass/styled-components";
 
-import Image from "../../components/Image";
+import Image from "components/Image";
+
 import Stats from "./Stats";
 
 const About = () => {

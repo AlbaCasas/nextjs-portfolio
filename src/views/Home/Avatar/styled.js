@@ -1,6 +1,5 @@
+import Image from "components/Image";
 import styled, { keyframes } from "styled-components";
-
-import Image from "../../../components/Image";
 
 const morph = keyframes`
 0% {

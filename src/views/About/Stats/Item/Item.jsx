@@ -1,7 +1,7 @@
 import React from "react";
 import { Flex } from "rebass/styled-components";
 
-import Text from "../../../../components/Text";
+import Text from "components/Text";
 
 const Item = ({ title, children }) => {
   return (

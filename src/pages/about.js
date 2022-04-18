@@ -1,5 +1,5 @@
-import Layout from "../components/Layout";
-import About from "../views/About/About";
+import Layout from "components/Layout";
+import About from "views/About/About";
 
 const AboutPage = () => {
   return (
