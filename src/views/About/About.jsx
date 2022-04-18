@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Flex, Text } from "rebass/styled-components";
 
-import Image from "components/Image";
+import { Image } from "components";
 
 import Stats from "./Stats";
 

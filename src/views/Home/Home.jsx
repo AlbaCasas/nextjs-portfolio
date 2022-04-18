@@ -2,9 +2,7 @@ import React from "react";
 import { RiGithubFill, RiLinkedinBoxFill } from "react-icons/ri";
 import { Flex } from "rebass/styled-components";
 
-import Icon from "components/Icon";
-import Link from "components/Link";
-import Text from "components/Text";
+import { Icon, Link, Text } from "components";
 
 import Avatar from "./Avatar";
 

@@ -1,7 +1,6 @@
 import { useState } from "react";
 
-import Layout from "components/Layout";
-import Modal from "components/Modal";
+import { Layout, Modal } from "components";
 import Portfolio from "views/Portfolio";
 
 const PortfolioPage = () => {

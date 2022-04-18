@@ -1,4 +1,4 @@
-import Layout from "components/Layout";
+import { Layout } from "components";
 import About from "views/About/About";
 
 const AboutPage = () => {
