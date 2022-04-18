@@ -37,7 +37,6 @@ const theme = {
     },
     subheading: {
       fontSize: "24px",
-      textTransform: "uppercase",
       fontWeight: 800,
       letterSpacing: "2px",
       fontFamily: "heading",
@@ -47,6 +46,12 @@ const theme = {
       fontSize: ["18px", "20px", "22px"],
       fontFamily: "heading",
       lineHeight: 1.4,
+    },
+    badge: {
+      fontWeight: 600,
+      fontSize: "12px",
+      fontFamily: "heading",
+      letterSpacing: "0px",
     },
     body: {
       fontSize: "16px",

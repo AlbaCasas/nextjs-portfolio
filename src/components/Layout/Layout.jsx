@@ -17,6 +17,7 @@ const Layout = ({ children, isFullScreen }) => {
         <Box
           py={7}
           maxWidth={880}
+          width={1}
           height={isFullScreen ? "100%" : "fit-content"}
         >
           {children}

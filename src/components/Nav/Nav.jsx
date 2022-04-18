@@ -33,7 +33,7 @@ const Nav = () => {
           position: "fixed",
         }}
       >
-        <Text variant="subheading">Works</Text>
+        <Text variant="subheading">WORKS</Text>
         <Menu display={["none", null, "block"]} />
         <Burger
           display={["block", null, "none"]}
