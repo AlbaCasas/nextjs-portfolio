@@ -1,5 +1,6 @@
 import React from "react";
 import { Box } from "rebass/styled-components";
+
 import { BurgerLine, StyledBurger } from "./styled";
 
 const Burger = ({ isOpen, onClick, ...props }) => {

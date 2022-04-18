@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Backdrop, Content } from "./components";
 
 const Modal = ({ children, ...props }) => {

@@ -1,7 +1,7 @@
-import { Box, Flex } from "rebass/styled-components";
-import Link from "../../Link";
 import { useRouter } from "next/router";
-import { route } from "next/dist/server/router";
+import { Box, Flex } from "rebass/styled-components";
+
+import Link from "../../Link";
 
 const Menu = ({ ...props }) => {
   const router = useRouter();

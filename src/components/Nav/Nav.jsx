@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { Flex, Box } from "rebass/styled-components";
+import { Box, Flex } from "rebass/styled-components";
+
 import Text from "../Text";
 import BurgerMenu from "./BurgerMenu";
-import Menu from "./Menu";
 import Burger from "./BurgerMenu/Burger";
+import Menu from "./Menu";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);

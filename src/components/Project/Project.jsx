@@ -1,9 +1,10 @@
 import React from "react";
 import { Box } from "rebass/styled-components";
+
 import Image from "../Image";
 import Tooltip from "../Tooltip";
 
-const Project = ({ children, src, title, ...props }) => {
+const Project = ({ src, title, ...props }) => {
   return (
     <Box sx={{ cursor: "pointer" }} height="100%" overflow="hidden" {...props}>
       <Image

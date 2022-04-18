@@ -1,7 +1,8 @@
 import { Box } from "rebass/styled-components";
+
 import Menu from "../Menu";
 
-const BurgerMenu = ({ isOpen, onBurgerClick, ...props }) => {
+const BurgerMenu = ({ isOpen, ...props }) => {
   return (
     <Box {...props}>
       <Box

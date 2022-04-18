@@ -1,5 +1,6 @@
 import React from "react";
 import { Box } from "rebass/styled-components";
+
 import Text from "../Text";
 
 const Badge = ({ children, ...props }) => {

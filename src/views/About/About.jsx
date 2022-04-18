@@ -1,6 +1,7 @@
-import Image from "../../components/Image";
 import React from "react";
-import { Flex, Text, Box } from "rebass/styled-components";
+import { Box, Flex, Text } from "rebass/styled-components";
+
+import Image from "../../components/Image";
 import Stats from "./Stats";
 
 const About = () => {

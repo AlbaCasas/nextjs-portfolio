@@ -1,5 +1,6 @@
 import React from "react";
-import { Flex, Box } from "rebass/styled-components";
+import { Box, Flex } from "rebass/styled-components";
+
 import Nav from "../Nav";
 
 const Layout = ({ children, isFullScreen }) => {

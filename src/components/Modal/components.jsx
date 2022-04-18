@@ -1,5 +1,6 @@
-import { Flex } from "rebass/styled-components";
 import { RiCloseFill } from "react-icons/ri";
+import { Flex } from "rebass/styled-components";
+
 import Icon from "../Icon";
 
 export const Backdrop = ({ children }) => (

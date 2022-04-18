@@ -1,10 +1,11 @@
 import React from "react";
+import { RiGithubFill, RiLinkedinBoxFill } from "react-icons/ri";
 import { Flex } from "rebass/styled-components";
-import Text from "../../components/Text";
-import Avatar from "./Avatar";
-import { RiLinkedinBoxFill, RiGithubFill } from "react-icons/ri";
+
 import Icon from "../../components/Icon";
 import Link from "../../components/Link";
+import Text from "../../components/Text";
+import Avatar from "./Avatar";
 
 const Home = () => {
   return (
