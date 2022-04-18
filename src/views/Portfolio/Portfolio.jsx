@@ -1,28 +1,23 @@
 import React from "react";
 import { Flex, Box } from "rebass/styled-components";
 import Badge from "../../components/Badge";
-import Image from "../../components/Image";
 import Project from "../../components/Project";
 import Text from "../../components/Text";
 
 const Portfolio = () => {
   return (
-    <Flex flexDirection="column" sx={{ gap: 8 }}>
+    <Flex flexDirection="column" sx={{ gap: 7 }}>
       <Flex sx={{ gap: 2 }} flexDirection="column" justifyContent="flex-start">
         <Badge>PORTFOLIO</Badge>
-        <Text variant="subheading">Creative Portfolio</Text>
+        <Text variant="subheading">Full-Stack Portfolio</Text>
       </Flex>
-      <Flex
-        flexDirection={["column", "column", "row"]}
-        alignItems="center"
-        sx={{ gap: 6 }}
-        flexWrap="wrap"
-        justifyContent="center"
+      <Box
+        display="grid"
+        sx={{ gap: 7, gridTemplateColumns: ["1fr", "repeat(2, 1fr)", null] }}
       >
-        <Project>
-          <Image width="420px" src="static/preview.png" alt="jobly" />
-        </Project>
-      </Flex>
+        <Project title="Jobly" src="static/preview.png" />
+        <Project title="Jobly" src="static/preview.png" />
+      </Box>
     </Flex>
   );
 };
