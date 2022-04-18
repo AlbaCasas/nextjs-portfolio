@@ -1,5 +1,6 @@
-import { useRouter } from "next/router";
 import { Box, Flex } from "rebass/styled-components";
+
+import { useRouter } from "next/router";
 
 import Link from "../../Link";
 

@@ -1,4 +1,5 @@
 import { Text } from "rebass/styled-components";
+
 import styled from "styled-components";
 
 export const StyledText = styled(Text)`

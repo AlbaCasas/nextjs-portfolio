@@ -1,6 +1,7 @@
-import NextLink from "next/link";
 import React from "react";
 import { Box } from "rebass/styled-components";
+
+import NextLink from "next/link";
 
 const Link = ({ children, href, isActive, ...props }) => {
   return (

@@ -1,7 +1,6 @@
 import { Box, Flex } from "rebass/styled-components";
 
-import {Badge, Project, Text} from "components";
-
+import { Badge, Project, Text } from "components";
 
 const Portfolio = ({ setIsShowModal }) => {
   const toggleModal = () => {
