@@ -22,24 +22,35 @@ export const Backdrop = ({ children }) => (
   </Flex>
 );
 
-export const Content = ({ children, ...props }) => (
+export const Content = ({ onClick, children, ...props }) => (
   <Flex
     width="968px"
     maxWidth="100%"
     height="fit-content"
     bg="secondary"
+    flexDirection="column"
     justifyContent="center"
-    alignItems="center"
-    p={5}
-    sx={{ position: "relative" }}
+    alignItems="flex-start"
+    px={6}
+    py={6}
+    sx={{ gap: "8px", position: "relative" }}
     {...props}
   >
     {children}
     <Icon
+      onClick={onClick}
       color="primary"
       fontSize="24px"
       icon={RiCloseFill}
-      sx={{ position: "absolute", top: 2, right: 2 }}
+      sx={{
+        position: "absolute",
+        top: 2,
+        right: 2,
+        cursor: "pointer",
+        ":hover": {
+          transform: "scale(1.2)",
+        },
+      }}
     />
   </Flex>
 );

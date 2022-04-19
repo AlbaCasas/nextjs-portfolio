@@ -8,3 +8,4 @@ export { default as Nav } from "./Nav";
 export { default as Project } from "./Project";
 export { default as Text } from "./Text";
 export { default as Tooltip } from "./Tooltip";
+export { default as Button } from "./Button";

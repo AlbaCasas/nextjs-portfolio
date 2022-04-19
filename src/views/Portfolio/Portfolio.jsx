@@ -2,9 +2,28 @@ import { Box, Flex } from "rebass/styled-components";
 
 import { Badge, Project, Text } from "components";
 
-const Portfolio = ({ setIsShowModal }) => {
-  const toggleModal = () => {
+import constants from "../../constants/descriptions";
+
+const { descriptionJobly, descriptionReactBites } = constants;
+
+const Portfolio = ({
+  setIsShowModal,
+  setTitle,
+  setSubtitle,
+  setDescription,
+}) => {
+  const toggleModalJobly = () => {
     setIsShowModal(true);
+    setTitle("Jobly");
+    setDescription(descriptionJobly);
+    setSubtitle("MARKETPLACE");
+  };
+
+  const toggleModalReactBites = () => {
+    setIsShowModal(true);
+    setTitle("ReactBites");
+    setSubtitle("byesss");
+    setDescription(descriptionReactBites);
   };
 
   return (
@@ -17,8 +36,16 @@ const Portfolio = ({ setIsShowModal }) => {
         display="grid"
         sx={{ gap: 7, gridTemplateColumns: ["1fr", "repeat(2, 1fr)", null] }}
       >
-        <Project onClick={toggleModal} title="Jobly" src="static/preview.png" />
-        <Project title="Jobly" src="static/preview.png" />
+        <Project
+          onClick={toggleModalJobly}
+          setTitle={setTitle}
+          src="static/preview.png"
+        />
+        <Project
+          onClick={toggleModalReactBites}
+          setTitle={setTitle}
+          src="static/preview.png"
+        />
       </Box>
     </Flex>
   );
