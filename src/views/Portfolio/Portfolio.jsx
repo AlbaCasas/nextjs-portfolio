@@ -1,33 +1,25 @@
+import { useState } from "react";
 import { Box, Flex } from "rebass/styled-components";
 
 import { Badge, Project, Text } from "components";
 
-import constants from "../../constants/descriptions";
+import ModalJobly from "./ModalJobly";
+import ModalReactBites from "./ModalReactBites";
+import { titles } from "./constants";
 
-const { descriptionJobly, descriptionReactBites } = constants;
+const MODAL_JOBLY = "jobly";
+const MODAL_REACT_BITES = "r-bites";
 
-const Portfolio = ({
-  setIsShowModal,
-  setTitle,
-  setSubtitle,
-  setDescription,
-}) => {
-  const toggleModalJobly = () => {
-    setIsShowModal(true);
-    setTitle("Jobly");
-    setDescription(descriptionJobly);
-    setSubtitle("MARKETPLACE");
+const Portfolio = ({ ...props }) => {
+  const [shownModalId, setShownModalId] = useState(null);
+  const showModalById = (modalId) => {
+    setShownModalId(modalId);
   };
-
-  const toggleModalReactBites = () => {
-    setIsShowModal(true);
-    setTitle("ReactBites");
-    setSubtitle("byesss");
-    setDescription(descriptionReactBites);
+  const closeModal = () => {
+    setShownModalId(null);
   };
-
   return (
-    <Flex flexDirection="column" sx={{ gap: 7 }}>
+    <Flex flexDirection="column" sx={{ gap: 7 }} {...props}>
       <Flex sx={{ gap: 2 }} flexDirection="column" justifyContent="flex-start">
         <Badge>PORTFOLIO</Badge>
         <Text variant="subheading">Full-Stack Portfolio</Text>
@@ -37,15 +29,24 @@ const Portfolio = ({
         sx={{ gap: 7, gridTemplateColumns: ["1fr", "repeat(2, 1fr)", null] }}
       >
         <Project
-          onClick={toggleModalJobly}
-          setTitle={setTitle}
+          onClick={() => showModalById(MODAL_JOBLY)}
           src="static/preview.png"
+          title={titles.jobly}
         />
         <Project
-          onClick={toggleModalReactBites}
-          setTitle={setTitle}
-          src="static/preview.png"
+          onClick={() => showModalById(MODAL_REACT_BITES)}
+          title={titles.reactBites}
+          src="static/react-bites.png"
         />
+        <Project
+          onClick={() => showModalById(MODAL_REACT_BITES)}
+          title={titles.musicPlayer}
+          src="static/react-bites.png"
+        />
+        {shownModalId === MODAL_JOBLY && <ModalJobly closeModal={closeModal} />}
+        {shownModalId === MODAL_REACT_BITES && (
+          <ModalReactBites closeModal={closeModal} />
+        )}
       </Box>
     </Flex>
   );

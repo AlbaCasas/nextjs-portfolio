@@ -8,28 +8,25 @@ import ModalTitle from "./ModalTitle";
 import { Backdrop, Content } from "./components";
 
 const Modal = ({
-  setIsShowModal,
+  closeModal,
   children,
   description,
   subtitle,
   title,
+  src,
   ...props
 }) => {
-  const closeModal = () => {
-    setIsShowModal(false);
-  };
-
   return (
     <Backdrop>
       <Flex flexDirection="column">
-        <Image src="static/preview.png" alt={title} width="968px" />
+        <Image src={src} alt={title} width="800px" />
         <Content onClick={closeModal} {...props}>
           <Flex
             flexDirection="column"
             justifyContent="center"
             alignItems="flex-start"
             py={2}
-            sx={{ borderBottom: "1px solid red", gap: 2 }}
+            sx={{ borderBottom: "1px solid gray", gap: 2 }}
           >
             <ModalTitle>{title}</ModalTitle>
             <ModalSubtitle>{subtitle}</ModalSubtitle>

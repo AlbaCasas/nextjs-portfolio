@@ -4,13 +4,16 @@ import { Box } from "rebass/styled-components";
 import Image from "../Image";
 import Tooltip from "../Tooltip";
 
-const Project = ({ src, setTitle, ...props }) => {
+const Project = ({ src, title, setTitle, ...props }) => {
   return (
     <Box sx={{ cursor: "pointer" }} height="100%" overflow="hidden" {...props}>
       <Image
-        data-tip={setTitle}
+        data-tip={title}
+        height="100%"
+        minHeight={["0", "300px", "300px"]}
         sx={{
           transition: "ease-in .3s all",
+          objectFit: "cover",
           ":hover": {
             transform: "scale(1.05)",
           },

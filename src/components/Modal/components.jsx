@@ -24,7 +24,7 @@ export const Backdrop = ({ children }) => (
 
 export const Content = ({ onClick, children, ...props }) => (
   <Flex
-    width="968px"
+    width="800px"
     maxWidth="100%"
     height="fit-content"
     bg="secondary"
@@ -33,7 +33,7 @@ export const Content = ({ onClick, children, ...props }) => (
     alignItems="flex-start"
     px={6}
     py={6}
-    sx={{ gap: "8px", position: "relative" }}
+    sx={{ gap: 3, position: "relative" }}
     {...props}
   >
     {children}

@@ -3,9 +3,10 @@ import { Button as ButtonNext } from "rebass/styled-components";
 
 import Text from "../Text";
 
-const Button = ({ children }) => {
+const Button = ({ children, ...props }) => {
   return (
     <ButtonNext
+      {...props}
       alignItems="center"
       justifyContent="center"
       bg="primary"
@@ -13,10 +14,6 @@ const Button = ({ children }) => {
       px={3}
       sx={{
         cursor: "pointer",
-        transition: "0.3s;",
-        ":hover": {
-          transform: "scale(1.05)",
-        },
       }}
     >
       <Text color="white" variant="italic">
