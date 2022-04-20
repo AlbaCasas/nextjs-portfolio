@@ -37,7 +37,9 @@ const Nav = () => {
         }}
       >
         <Link href="/">
-          <Text variant="subheading">PORTFOLIO</Text>
+          <Text sx={{ cursor: "pointer" }} variant="subheading">
+            PORTFOLIO
+          </Text>
         </Link>
         <Menu display={["none", null, "block"]} />
         <Burger

@@ -34,23 +34,23 @@ const Portfolio = ({ ...props }) => {
       >
         <Project
           onClick={() => showModalById(MODAL_JOBLY)}
-          src="static/logo-jobly.png"
+          src="/static/logo-jobly.png"
           title={`${titles.jobly} · MERN Full Stack`}
         />
         <Project
           onClick={() => showModalById(MODAL_REACT_BITES)}
           title={`${titles.reactBites} · React`}
-          src="static/react-bites-logo.png"
+          src="/static/react-bites-logo.png"
         />
         <Project
           onClick={() => showModalById(MODAL_REACT_MUSIC_PLAYER)}
           title={`${titles.musicPlayer} · React + iTunes`}
-          src="static/music-player-logo.png"
+          src="/static/music-player-logo.png"
         />
         <Project
           onClick={() => router.push("/")}
           title={`${titles.portfolio} · NextJs`}
-          src="static/portfolio-logo.png"
+          src="/static/portfolio-logo.png"
         />
         {shownModalId === MODAL_JOBLY && <ModalJobly closeModal={closeModal} />}
         {shownModalId === MODAL_REACT_BITES && (

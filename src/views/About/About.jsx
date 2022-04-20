@@ -9,7 +9,7 @@ const About = () => {
   return (
     <Box>
       <Image
-        src="static/about-photo.jpg"
+        src="/static/about-photo.jpg"
         maxHeight="440px"
         alt="Alba Casas Headshot"
         width={1}
@@ -17,6 +17,7 @@ const About = () => {
         sx={{
           objectFit: "cover",
         }}
+        priority
       />
       <Flex flexDirection={["column", null, "row"]} sx={{ gap: 7 }}>
         <Box width={[1, null, 0.5]}>

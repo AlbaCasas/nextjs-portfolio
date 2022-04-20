@@ -7,7 +7,7 @@ const ModalReactBites = ({ closeModal }) => {
   const title = "React Bites";
   const description = descriptions.reactBites;
   const subtitle = "REACT";
-  const src = "static/react-bites.png";
+  const src = "/static/react-bites.png";
   const url = "https://reactbites.netlify.app";
   const githubUrl = "https://github.com/AlbaCasas/react-bites";
 
