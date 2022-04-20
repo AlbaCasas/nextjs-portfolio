@@ -18,7 +18,7 @@ function Portfolio({ Component, pageProps }) {
         <meta
           name="image"
           property="og:image"
-          content="/public/portfolio-logo.png"
+          content="/static/portfolio-logo.png"
         />
       </Head>
       <ThemeProvider theme={theme}>
