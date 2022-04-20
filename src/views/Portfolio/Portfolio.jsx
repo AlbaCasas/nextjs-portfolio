@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Box, Flex } from "rebass/styled-components";
 
 import { Badge, Project, Text } from "components";
+import { useRouter } from "next/router";
 
 import ModalJobly from "./ModalJobly";
 import ModalMusicPlayer from "./ModalMusicPlayer";
@@ -14,6 +15,7 @@ const MODAL_REACT_MUSIC_PLAYER = "music-player";
 
 const Portfolio = ({ ...props }) => {
   const [shownModalId, setShownModalId] = useState(null);
+  const router = useRouter();
   const showModalById = (modalId) => {
     setShownModalId(modalId);
   };
@@ -44,6 +46,11 @@ const Portfolio = ({ ...props }) => {
           onClick={() => showModalById(MODAL_REACT_MUSIC_PLAYER)}
           title={`${titles.musicPlayer} · React + iTunes`}
           src="static/music-player-logo.png"
+        />
+        <Project
+          onClick={() => router.push("/")}
+          title={`${titles.portfolio} · NextJs`}
+          src="static/portfolio-logo.png"
         />
         {shownModalId === MODAL_JOBLY && <ModalJobly closeModal={closeModal} />}
         {shownModalId === MODAL_REACT_BITES && (

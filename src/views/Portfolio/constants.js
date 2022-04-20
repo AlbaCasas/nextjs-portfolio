@@ -12,4 +12,5 @@ export const titles = {
   jobly: "Jobly",
   reactBites: "React Bites",
   musicPlayer: "Music Player",
+  portfolio: "Portfolio",
 };

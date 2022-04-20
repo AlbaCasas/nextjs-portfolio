@@ -9,7 +9,7 @@ const About = () => {
   return (
     <Box>
       <Image
-        src="static/horizontal-headshot.png"
+        src="static/about-photo.jpg"
         maxHeight="440px"
         alt="Alba Casas Headshot"
         width={1}

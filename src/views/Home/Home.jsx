@@ -1,8 +1,8 @@
 import React from "react";
 import { RiGithubFill, RiLinkedinBoxFill } from "react-icons/ri";
-import { Flex } from "rebass/styled-components";
+import { Box, Flex } from "rebass/styled-components";
 
-import { Icon, Link, Text } from "components";
+import { Icon, Text } from "components";
 
 import Avatar from "./Avatar";
 
@@ -35,12 +35,17 @@ const Home = () => {
           creating the best applications.
         </Text>
         <Flex>
-          <Link mr={3} href="https://www.linkedin.com/in/alba-casas/">
+          <Box
+            as="a"
+            mr={3}
+            href="https://www.linkedin.com/in/alba-casas/"
+            target="_blank"
+          >
             <Icon color="primary" fontSize="32px" icon={RiLinkedinBoxFill} />
-          </Link>
-          <Link href="https://github.com/AlbaCasas">
+          </Box>
+          <Box as="a" target="_blank" href="https://github.com/AlbaCasas">
             <Icon color="primary" fontSize="32px" icon={RiGithubFill} />
-          </Link>
+          </Box>
         </Flex>
       </Flex>
     </Flex>

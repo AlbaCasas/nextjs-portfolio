@@ -6,7 +6,13 @@ import Tooltip from "../Tooltip";
 
 const Project = ({ src, title, ...props }) => {
   return (
-    <Box sx={{ cursor: "pointer" }} height="100%" overflow="hidden" {...props}>
+    <Box
+      sx={{ cursor: "pointer" }}
+      bg="#827497"
+      height="350px"
+      overflow="hidden"
+      {...props}
+    >
       <Image
         data-tip={title}
         height="100%"
