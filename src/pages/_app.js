@@ -15,6 +15,7 @@ function Portfolio({ Component, pageProps }) {
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&family=Mulish:wght@400;700&display=swap"
           rel="stylesheet"
         />
+        <meta property="og:image" content="/public/portfolio-logo.png" />
       </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
