@@ -11,7 +11,7 @@ const BurgerMenu = ({ isOpen, ...props }) => {
         px={4}
         py={5}
         sx={{
-          position: "absolute",
+          position: "fixed",
           zIndex: 1,
           right: 0,
           top: !isOpen ? "-110px" : "56px",
