@@ -32,6 +32,8 @@ const theme = {
     primary: {
       bg: "primary",
       color: "secondary",
+      border: "1px solid",
+      borderColor: "primary",
     },
     secondary: {
       bg: "secondary",

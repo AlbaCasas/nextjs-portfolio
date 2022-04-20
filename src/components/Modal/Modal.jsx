@@ -21,8 +21,19 @@ const Modal = ({
   return (
     <Backdrop>
       <OutsideClickHandler onOutsideClick={closeModal}>
-        <Flex flexDirection="column">
-          <Image src={src} alt={title} width="800px" />
+        <Flex
+          flexDirection="column"
+          maxHeight="calc(100vh - 48px)"
+          width={[1, 1, "800px"]}
+          overflow="auto"
+        >
+          <Image
+            src={src}
+            alt={title}
+            width="100%"
+            minHeight="400px"
+            sx={{ objectFit: "cover" }}
+          />
           <Content onClick={closeModal} {...props}>
             <Flex
               flexDirection="column"

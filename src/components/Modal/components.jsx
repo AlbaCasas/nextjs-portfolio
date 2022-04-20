@@ -24,8 +24,6 @@ export const Backdrop = ({ children }) => (
 
 export const Content = ({ onClick, children, ...props }) => (
   <Flex
-    width="800px"
-    maxWidth="100%"
     height="fit-content"
     bg="secondary"
     flexDirection="column"
