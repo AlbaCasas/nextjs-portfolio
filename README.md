@@ -11,8 +11,6 @@
 
 ![alt My Portfolio](./doc/preview.png)
 
----
-
 In this portfolio I showcase my latest works:
 
 - Jobly - MERN Full-stack application
