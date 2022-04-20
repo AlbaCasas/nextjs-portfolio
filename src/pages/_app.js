@@ -8,6 +8,7 @@ function Portfolio({ Component, pageProps }) {
     <>
       <Head>
         <title>Alba Casas</title>
+        <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
