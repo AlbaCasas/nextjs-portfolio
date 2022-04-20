@@ -29,7 +29,7 @@ const Modal = ({
               justifyContent="center"
               alignItems="flex-start"
               py={2}
-              sx={{ borderBottom: "1px solid gray", gap: 2 }}
+              sx={{ gap: 2 }}
             >
               <ModalTitle>{title}</ModalTitle>
               <ModalSubtitle>{subtitle}</ModalSubtitle>

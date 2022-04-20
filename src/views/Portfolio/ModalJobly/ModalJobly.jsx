@@ -7,10 +7,10 @@ const ModalJobly = ({ closeModal }) => {
   const title = "Jobly";
   const description = descriptions.jobly;
   const subtitle = "MERN STACK";
-  const src = "static/preview.png";
+  const src = "static/preview-jobly.png";
   const url = "https://jobly-ac.netlify.app";
   const githubUrl = "https://github.com/AlbaCasas/jobly";
-  
+
   return (
     <Modal.Modal
       title={title}

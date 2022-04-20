@@ -24,12 +24,15 @@ const About = () => {
             Alba Casas · Developer
           </Text>
           <Text variant="italic">
-            Hello, I am a creative developer based in Barcelona and happy to
-            travel all over Europe to capture your big day in candid and
-            authentic photos. I will create a lasting memory of the people.
+            {`Hello! I'm Alba Casas, a creative software developer and enthusiast of everything tech related. 
+              I have completed a Full-Stack Bootcamp
+              and I am currently enrolled in a Graphic Design (UI/UX) degree.`}
+            <br />
+            <br />
+            {`I believe my background in both graphic design and coding can be a great asset for many companies!`}
           </Text>
         </Box>
-        <Box width={[1, null, 0.5]}>
+        <Box mt={7} pt={1} width={[1, null, 0.5]}>
           <Stats />
         </Box>
       </Flex>

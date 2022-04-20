@@ -6,10 +6,14 @@ import Item from "./Item";
 const Stats = () => {
   return (
     <Flex flexDirection={"column"}>
-      <Item title="City">Barcelona</Item>
-      <Item title="Email">albacasasarzua1b@gmail.com</Item>
-      <Item title="Phone">+34 601 110 336</Item>
-      <Item title="Study">BAU · Universidad de Diseño</Item>
+      <Item title="Living in">Barcelona</Item>
+      <Item title="E-mail">
+        <a href="mailto:albacasasarzua1b@gmail.com">
+          albacasasarzua1b@gmail.com
+        </a>
+      </Item>
+      <Item title="Bootcamp">Neoland</Item>
+      <Item title="University">BAU · Universidad de Diseño</Item>
     </Flex>
   );
 };

@@ -4,7 +4,7 @@ import { Box } from "rebass/styled-components";
 import Image from "../Image";
 import Tooltip from "../Tooltip";
 
-const Project = ({ src, title, setTitle, ...props }) => {
+const Project = ({ src, title, ...props }) => {
   return (
     <Box sx={{ cursor: "pointer" }} height="100%" overflow="hidden" {...props}>
       <Image
@@ -19,7 +19,8 @@ const Project = ({ src, title, setTitle, ...props }) => {
           },
         }}
         src={src}
-        alt={setTitle}
+        alt={title}
+        width="100%"
       />
       <Tooltip />
     </Box>

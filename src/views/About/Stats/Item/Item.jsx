@@ -6,7 +6,7 @@ import { Text } from "components";
 const Item = ({ title, children }) => {
   return (
     <Flex alignItems={"center"}>
-      <Text width="64px" variant="italic-bold">
+      <Text width="96px" variant="italic-bold">
         {title}:
       </Text>
       <Text variant="body">{children}</Text>
