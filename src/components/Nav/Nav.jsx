@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Box, Flex } from "rebass/styled-components";
 
+import Link from "next/link";
+
 import Text from "../Text";
 import BurgerMenu from "./BurgerMenu";
 import Burger from "./BurgerMenu/Burger";
@@ -34,7 +36,9 @@ const Nav = () => {
           position: "fixed",
         }}
       >
-        <Text variant="subheading">WORKS</Text>
+        <Link href="/">
+          <Text variant="subheading">PORTFOLIO</Text>
+        </Link>
         <Menu display={["none", null, "block"]} />
         <Burger
           display={["block", null, "none"]}

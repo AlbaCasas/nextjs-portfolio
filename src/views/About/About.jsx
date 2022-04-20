@@ -32,7 +32,7 @@ const About = () => {
             {`I believe my background in both graphic design and coding can be a great asset for many companies!`}
           </Text>
         </Box>
-        <Box mt={7} pt={1} width={[1, null, 0.5]}>
+        <Box mt={[0, null, 7]} pt={1} width={[1, null, 0.5]}>
           <Stats />
         </Box>
       </Flex>
