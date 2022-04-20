@@ -28,6 +28,18 @@ const theme = {
     regular: 400,
     bold: 700,
   },
+  buttons: {
+    primary: {
+      bg: "primary",
+      color: "secondary",
+    },
+    secondary: {
+      bg: "secondary",
+      color: "primary",
+      border: "1px solid",
+      borderColor: "primary",
+    },
+  },
   text: {
     heading: {
       fontSize: ["30px", "40px", "48px"],

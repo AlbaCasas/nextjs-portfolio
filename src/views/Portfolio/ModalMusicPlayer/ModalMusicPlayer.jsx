@@ -3,13 +3,13 @@ import React from "react";
 import { Modal } from "../../../components";
 import { descriptions } from "../constants";
 
-const ModalReactBites = ({ closeModal }) => {
-  const title = "React Bites";
-  const description = descriptions.reactBites;
-  const subtitle = "REACT";
-  const src = "static/react-bites.png";
-  const url = "https://reactbites.netlify.app";
-  const githubUrl = "https://github.com/AlbaCasas/react-bites";
+const ModalMusicPlayer = ({ closeModal }) => {
+  const title = "Music player";
+  const description = descriptions.musicPlayer;
+  const subtitle = "REACT + API";
+  const src = "static/music-player.png";
+  const url = "https://music-player-ac.netlify.app/";
+  const githubUrl = "https://github.com/AlbaCasas/music-player";
 
   return (
     <Modal.Modal
@@ -24,4 +24,4 @@ const ModalReactBites = ({ closeModal }) => {
   );
 };
 
-export default ModalReactBites;
+export default ModalMusicPlayer;

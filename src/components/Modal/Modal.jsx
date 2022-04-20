@@ -2,6 +2,7 @@ import React from "react";
 import { Flex } from "rebass/styled-components";
 
 import Image from "../Image";
+import ModalButtons from "./ModalButtons";
 import ModalDescription from "./ModalDescription";
 import ModalSubtitle from "./ModalSubtitle";
 import ModalTitle from "./ModalTitle";
@@ -39,4 +40,7 @@ const Modal = ({
   );
 };
 
-export default Modal;
+export default {
+  Modal: Modal,
+  Buttons: ModalButtons,
+};
