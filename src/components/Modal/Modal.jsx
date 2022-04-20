@@ -32,7 +32,8 @@ const Modal = ({
             alt={title}
             width="100%"
             minHeight="400px"
-            sx={{ objectFit: "cover" }}
+            objectFit="cover"
+            priority
           />
           <Content onClick={closeModal} {...props}>
             <Flex

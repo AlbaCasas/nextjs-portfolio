@@ -1,4 +1,5 @@
-import { Image } from "components";
+import { Image } from "rebass/styled-components";
+
 import styled, { keyframes } from "styled-components";
 
 const morph = keyframes`

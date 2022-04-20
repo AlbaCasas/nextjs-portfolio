@@ -38,7 +38,7 @@ const Nav = () => {
       >
         <Link href="/">
           <Text sx={{ cursor: "pointer" }} variant="subheading">
-            PORTFOLIO
+            A. CASAS
           </Text>
         </Link>
         <Menu display={["none", null, "block"]} />

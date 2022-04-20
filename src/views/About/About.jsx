@@ -10,13 +10,11 @@ const About = () => {
     <Box>
       <Image
         src="/static/about-photo.jpg"
-        maxHeight="440px"
+        blurSrc={"/static/blur/about-photo-blur.jpg"}
+        height="440px"
         alt="Alba Casas Headshot"
         width={1}
         mb={6}
-        sx={{
-          objectFit: "cover",
-        }}
         priority
       />
       <Flex flexDirection={["column", null, "row"]} sx={{ gap: 7 }}>
