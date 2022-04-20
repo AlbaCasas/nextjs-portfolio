@@ -1,4 +1,5 @@
 import React from "react";
+import OutsideClickHandler from "react-outside-click-handler";
 import { Flex } from "rebass/styled-components";
 
 import Image from "../Image";
@@ -19,23 +20,25 @@ const Modal = ({
 }) => {
   return (
     <Backdrop>
-      <Flex flexDirection="column">
-        <Image src={src} alt={title} width="800px" />
-        <Content onClick={closeModal} {...props}>
-          <Flex
-            flexDirection="column"
-            justifyContent="center"
-            alignItems="flex-start"
-            py={2}
-            sx={{ borderBottom: "1px solid gray", gap: 2 }}
-          >
-            <ModalTitle>{title}</ModalTitle>
-            <ModalSubtitle>{subtitle}</ModalSubtitle>
-          </Flex>
-          <ModalDescription>{description}</ModalDescription>
-          {children}
-        </Content>
-      </Flex>
+      <OutsideClickHandler onOutsideClick={closeModal}>
+        <Flex flexDirection="column">
+          <Image src={src} alt={title} width="800px" />
+          <Content onClick={closeModal} {...props}>
+            <Flex
+              flexDirection="column"
+              justifyContent="center"
+              alignItems="flex-start"
+              py={2}
+              sx={{ borderBottom: "1px solid gray", gap: 2 }}
+            >
+              <ModalTitle>{title}</ModalTitle>
+              <ModalSubtitle>{subtitle}</ModalSubtitle>
+            </Flex>
+            <ModalDescription>{description}</ModalDescription>
+            {children}
+          </Content>
+        </Flex>
+      </OutsideClickHandler>
     </Backdrop>
   );
 };
